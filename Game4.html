@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang='en'>
+ 
+<style>@import url("https://fonts.googleapis.com/css?family=Montserrat"); 
+    @import url("https://fonts.googleapis.com/css?family=Blinker&display=swap");
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+    @font-face{
+         font-family:GALACTIC VANGUARDIAN NCV;
+         src: url('font/GALACTIC-VANGUARDIAN-NCV.ttf;');
+     }
+
+
+
+    body,html{
+    background-image: url('Img/WorldOfWarcraft/WOWBG.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    scroll-behavior: smooth;
+    
+}
+     
+    :root {
+        --main-bg-color: #0B0C10;
+        --secondary-bg-color: #1F2833;
+        --main-cont-color:#2b3848;;
+        --secondary-cont-color: #c3073f;
+        --main-font-color: #C5C6C7;
+    }
+     
+    h1 {
+        font-size: 90px;
+        color: var(--main-cont-color);
+        font-weight: 100;
+        margin: 0;
+    }
+     
+    h2 {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 50px;
+        color: white;
+        font-weight: 100;
+        margin: 0;
+    }
+     
+    h3 {
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        font-size: 0.8em;
+    }
+     
+     
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        color: white;
+    }
+     
+    html {
+        scroll-behavior: smooth;
+    }
+     
+    body {
+        margin: 0;
+        padding: 0;
+        height: auto;
+        width: 100%;
+       
+    }
+     
+     
+    header {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid #C5C6C7;
+        
+    }
+     
+    header div {
+        font-family:"GALACTIC VANGUARDIAN NCV";
+        font-size: 50px;
+        color: white;
+    }
+     
+    nav {
+        height: 70px;
+        background: var(--main-cont-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        position: -webkit-sticky;
+        z-index: 999;
+        top: 0;
+    }
+     
+    nav a {
+        margin: 0px 40px 0px 40px;
+        padding: 21px 0px 21px 0px;
+        border-bottom: 3px solid rgba(0, 0, 0, 0);
+        transition: color ease-in-out 250ms;
+    }
+     
+    nav a:hover {
+        color: white;
+    }
+     
+    nav a.active {
+        border-bottom-color: var(--main-cont-color);
+    }
+     
+     
+     
+    main {
+        height: auto;
+        width: 100%;
+    }
+     
+    p{
+        color:white;
+    }
+
+    
+    
+   
+article{
+    display: inline-table;
+    color: #C5C6C7;
+    width:500px;
+     height:200px ;
+   
+    margin: 30px;
+}
+main{
+    width:90%;
+    height:400px ;
+    padding:50px;
+    margin: 30px;
+}
+  div.video{
+      display: inline-table;
+      float:right;
+  }
+  
+  .button {
+         background-color: #1c87c9;
+         border: none;
+         color: white;
+         padding: 20px 34px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 20px;
+         margin: 4px 2px;
+         cursor: pointer;
+         }
+
+</style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment 2</title>
+
+  <!-- Keep wireframe.css for debugging, add your css to style.css -->
+  
+</head>
+ 
+<body>
+  <a id="home"></a>
+  <header>
+    <div><h1><span style="color:#D30E18">G</span><span style="color:#EED802">a</span><span style="color:#41A136">m</span><span style="color:#3262AA">e</span>Plus
+    <img src='Img/Logo.png' id="Logo" alt='website Logo' height="40" float="left"/>
+         </h1>
+    </div>
+  </header>
+ 
+  <nav id="navbar">
+      
+    <a href="#home">Home</a>
+    <a href="#Games">Games</a>
+    <a href="#GameGuide">GameGuide</a>
+    <a href="#Video">Video</a>
+  </nav>
+ 
+ 
+ <main>
+     <h2><img src='Img/WorldOfWarcraft/wowlogo.png'id='dotaLG' height='200'></h2>
+     <article>
+        <a> DECLARE YOUR ALLEGIANCE</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a class='guide'>
+                Azeroth paid a terrible price to end the apocalyptic march of the Legion’s crusade—but even as the world’s wounds are tended, it is the shattered trust between the Alliance and Horde that may prove hardest to mend. As the flames of war threaten to engulf the land, the Rise of Azshara update calls upon you to end an ancient threat, and continue to champion your faction's cause.
+        </a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <a href="https://us.shop.battle.net/en-us/product/world-of-warcraft-battle-for-azeroth?utm_source=wow&utm_medium=referral&utm_campaign=bfa&utm_content=top" class="button">Download Game </a>
+    </article>
+        <div class="video">
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/ZDzPkTEMBgc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+ </main>
+
+     
+      
+   
+    
+
+</body>
+<script>
+ 
+
+
+</script>
+
+
+    
+  
+ 
+  
+ 
+</body>
+ 
+</html>
