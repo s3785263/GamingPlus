@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang='en'>
+ 
+<style>@import url("https://fonts.googleapis.com/css?family=Montserrat"); 
+    @import url("https://fonts.googleapis.com/css?family=Blinker&display=swap");
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+    @font-face{
+         font-family:GALACTIC VANGUARDIAN NCV;
+         src: url('font/GALACTIC-VANGUARDIAN-NCV.ttf;');
+     }
+
+
+    body,html{
+    background-image: url('Img/Homebackground.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    scroll-behavior: smooth;
+    
+}
+     
+    :root {
+        --main-bg-color: #0B0C10;
+        --secondary-bg-color: #1F2833;
+        --main-cont-color:#2b3848;;
+        --secondary-cont-color: #c3073f;
+        --main-font-color: #C5C6C7;
+    }
+     
+    h1 {
+        font-size: 90px;
+        color: var(--main-cont-color);
+        font-weight: 100;
+        margin: 0;
+    }
+     
+    h2 {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 50px;
+        color: white;
+        font-weight: 100;
+        margin: 0;
+    }
+     
+    h3 {
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        font-size: 0.8em;
+    }
+     
+     
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+       font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        color: white;
+    }
+     
+    html {
+        scroll-behavior: smooth;
+    }
+     
+    body {
+        margin: 0;
+        padding: 0;
+        height: auto;
+        width: 100%;
+       
+    }
+     
+     
+    header {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid #C5C6C7;
+        
+    }
+     
+    header div {
+        font-family:"GALACTIC VANGUARDIAN NCV";
+        font-size: 50px;
+        color: white;
+    }
+     
+    nav {
+        height: 70px;
+        background: var(--main-cont-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        position: -webkit-sticky;
+        z-index: 999;
+        top: 0;
+    }
+     
+    nav a {
+        margin: 0px 40px 0px 40px;
+        padding: 21px 0px 21px 0px;
+        border-bottom: 3px solid rgba(0, 0, 0, 0);
+        transition: color ease-in-out 250ms;
+    }
+     
+    nav a:hover {
+        color: white;
+    }
+     
+    nav a.active {
+        border-bottom-color: var(--main-cont-color);
+    }
+     
+     
+     
+    main {
+        height: auto;
+        width: 100%;
+    }
+     
+    p{
+        color:white;
+    }
+
+    div.Leftgame{
+  display:inline-block;
+  width: 400px;
+  height:100px; 
+  padding: 5px;
+  margin:0;
+  border-width:0;
+}
+div.Rightgame{
+  display:inline-block;
+  width: 400px;
+  height:100px;  
+  padding: 5px;
+
+  border-width:0;
+  
+}
+    
+article{
+   visibility: visible;
+   width: 900px;height:700px; 
+   padding: 5px;margin: 350px; 
+   border-style: solid;
+   border-color:#46617e;
+   border-radius: 25px;
+  }
+
+  * {
+            margin: 0;
+            padding: 0
+        }
+        .box {
+            width: 700px;
+            height: 500px;
+            border: 1px solid #ccc;
+            margin: 100px auto;
+            padding: 5px;
+ 
+        }
+        .inner{
+            width: 700px;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+        }
+        .inner img{
+            width: 700px;
+            height: 500px;
+            vertical-align: top
+        }
+        ul {
+            width: 1000%;
+            position: absolute;
+            list-style: none;
+            left:0;
+            top: 0;
+        }
+        .inner li{
+            float: left;
+ 
+        }
+ 
+        ol {
+            position: absolute;
+            height: 20px;
+            right: 20px;
+            bottom: 20px;
+            text-align: center;
+            padding: 5px;
+        }
+        ol li{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            background-color: #fff;
+            margin: 5px;
+            cursor: pointer;
+ 
+        }
+        ol .current{
+            background-color:#2b3848;;
+        }
+        #arr{
+            display: none;
+        }
+        #arr span{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            margin-top: -20px;
+            background: #fff;
+            cursor: pointer;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            
+            font-size: 30px;
+            color: #000;
+            opacity: 0.5;
+            border: 1px solid #fff;
+        }
+        #arr #right {
+            right: 5px;
+            left: auto;
+        }
+
+
+  
+
+</style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment 2</title>
+
+  <!-- Keep wireframe.css for debugging, add your css to style.css -->
+  
+</head>
+ 
+<body>
+  <a id="home"></a>
+  <header>
+    <div><h1><span style="color:#D30E18" style='font-family:GALACTIC VANGUARDIAN NCV;'>G</span><span style="color:#EED802">a</span><span style="color:#41A136">m</span><span style="color:#3262AA">e</span>Plus
+    <img src='Img/Logo.png' id="Logo" alt='website Logo' height="40" float="left"/>
+         </h1>
+    </div>
+  </header>
+ 
+  <nav id="navbar">
+      
+    <a href="#home">Home</a>
+    <a href="#Games">Games</a>
+    <a href="#GameGuide">GameGuide</a>
+    <a href="#Video">Video</a>
+  </nav>
+ 
+ 
+  <main>
+
+<div class="box" id="box">
+        <div class="inner">
+            
+            <ul>
+                <li><a href="#"><img src="Img/WorldOfWarcraft/worldofwarcraft.jpg" alt=""></a></li>
+                <li><a href="#"><img src="Img/Leagueoflegends/League-of-Legends.jpg" alt=""></a></li>
+                <li><a href="#"><img src="Img/HearthStone/HearthStoneAD.jpg" alt=""></a></li>
+                <li><a href="#"><img src="Img/OverWatch/overwatchAD.jpg" alt=""></a></li>
+                <li><a href="#"><img src="Img/CallOfDuty/CALLOFDUTYAD.jpg" alt=""></a></li>
+            </ul>
+            <ol class="bar">
+             
+            </ol>
+         
+            <div id="arr">
+                  <span id="left"> </span>
+                  <span id="right">></span>
+            </div>
+     
+        </div>
+    </div>
+    
+   
+
+        
+        
+ 
+    <article id=Top10Games>
+        <h2>Top 10 Games</h2>
+        <div class="Leftgame">
+            <p class="title"><b>1.</b>
+            <img src='Img/Dota2/Dota2logo.png' alt='DATA2' height="60px" width="80px">
+            <b>DOTA2</b></p>
+        </div>
+        <div class="Rightgame">
+            <p class="title"><b>6.</b>
+            <img src='Img/CallOfDuty/CallOfDutyLogo.png' alt='CallofDuty' height="80px" width="80px">
+        <b>Call Of Duty</b></p>
+        </div>
+        <div class="Leftgame">
+            <p class="title"><b>2.</b>
+            <img src='Img/Leagueoflegends/Leagueoflegends.PNG' alt='Leagueoflegends' height="60px" width="70px">
+        <b>League of legends</b></p>
+        </div>
+        <div class="Rightgame">
+            <p class="title"><b>7.</b>
+            <img src='Img/PUBG/PUBGLogo.png' alt='BattleGrounds' height="60px" width="80px">
+        <b>BattleGrounds</b></p>
+        </div>
+        <div class="Leftgame">
+            <p class="title"><b>3.</b>
+            <img src='Img/HearthStone/HearthStoneLogo.png' alt='HearthStone' height="80px" width="80px">
+        <b>HearthStone</b></p>
+        </div>
+        <div class="Rightgame">
+            <p class="title"><b>8.</b>
+            <img src='Img/CSGO/CSGOLogo.png' alt='Counter-Strike- Global Offensive' height="60px" width="70px">
+        <b>CS:GO</b></p>
+        </div>
+        <div class="Leftgame">
+            <p class="title"><b>4.</b>
+            <img src='Img/WorldOfWarcraft/WorldOfWarcraftLogo.png' alt='WorldOfWarcraft' height="80px" width="80px">
+        <b>World Of Warcraft</b></p>
+        </div>
+        <div class="Rightgame">
+            <p class="title"><b>9.</b>
+            <img src='Img/Fortnite/ForniteLogo.png' alt='Fortnite' height="80px" width="80px">
+        <b>Fortnite</b></p>
+        </div>
+        <div class="Leftgame">
+            <p class="title"><b>5.</b>
+            <img src='Img/OverWatch/OverWatchLogo.png' alt='OverWatch' height="80px" width="80px">
+        <b>OverWatch</b></p>
+        </div>
+      
+        <div class="Rightgame">
+            <p class="title"><b>10.</b>
+            <img src='Img/Rainbowsix/Rainbow 6Logo.png' alt='Rainbow Six- Siege' height="60px" width="70px">
+        <b>Rainbow 6 Siege</b></p>
+        </div>
+    </article>
+
+    
+
+</body>
+<script>
+ /**
+     *
+     * @param id  
+     * @returns {HTMLElement | null}  
+     */
+     function my$(id) {
+        return document.getElementById(id);
+    }
+ 
+  
+    var box=my$("box");
+    var inner=box.children[0];
+    var ulObj=inner.children[0];
+    var list=ulObj.children;
+    var olObj=inner.children[1];
+    var arr=my$("arr");
+    var imgWidth=inner.offsetWidth;
+    var right=my$("right");
+    var pic=0;
+
+    for(var i=0;i<list.length;i++){
+        var liObj=document.createElement("li");
+ 
+        olObj.appendChild(liObj);
+        liObj.innerText=(i+1);
+        liObj.setAttribute("index",i);
+ 
+      
+        liObj.οnmοuseοver=function () {
+          
+ 
+            for (var j=0;j<olObj.children.length;j++){
+                olObj.children[j].removeAttribute("class");
+            }
+            this.className="current";
+            pic=this.getAttribute("index");
+            animate(ulObj,-pic*imgWidth);
+        }
+ 
+    }
+ 
+ 
+    
+    olObj.children[0].className = "current";
+
+    ulObj.appendChild(ulObj.children[0].cloneNode(true));
+ 
+    var timeId=setInterval(onmouseclickHandle,1000);
+
+    box.οnmοuseοver=function () {
+        arr.style.display="block";
+        clearInterval(timeId);
+    };
+    box.οnmοuseοut=function () {
+        arr.style.display="none";
+        timeId=setInterval(onmouseclickHandle,1000);
+    };
+ 
+    right.οnclick=onmouseclickHandle;
+    function onmouseclickHandle() {
+       
+        if (pic == list.length - 1) {
+           
+            pic = 0;
+            ulObj.style.left = 0 + "px";
+        }
+        pic++;
+        animate(ulObj, -pic * imgWidth);
+        if (pic == list.length - 1) {
+          
+            olObj.children[olObj.children.length - 1].className = "";
+       
+            olObj.children[0].className = "current";
+        } else {
+           
+            for (var i = 0; i < olObj.children.length; i++) {
+                olObj.children[i].removeAttribute("class");
+            }
+            olObj.children[pic].className = "current";
+        }
+    }
+    left.οnclick=function () {
+        if (pic==0){
+            pic=list.length-1;
+            ulObj.style.left=-pic*imgWidth+"px";
+        }
+        pic--;
+        animate(ulObj,-pic*imgWidth);
+        for (var i = 0; i < olObj.children.length; i++) {
+            olObj.children[i].removeAttribute("class");
+        }
+        
+        olObj.children[pic].className = "current";
+    };
+    
+    
+    function animate(element, target) {
+        clearInterval(element.timeId);
+        
+        element.timeId = setInterval(function () {
+          
+            var current = element.offsetLeft;
+           
+            var step = 10;
+            step = current < target ? step : -step;
+           
+            current += step;
+            if (Math.abs(current - target) > Math.abs(step)) {
+                element.style.left = current + "px";
+            } else {
+                
+                clearInterval(element.timeId);
+             
+                element.style.left = target + "px";
+            }
+        }, 10);
+    }
+
+
+</script>
+
+
+    </main>
+ 
+  
+ 
+  
+ 
+</body>
+ 
+</html>
