@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang='en'>
+ 
+<style>@import url("https://fonts.googleapis.com/css?family=Montserrat"); 
+    @import url("https://fonts.googleapis.com/css?family=Blinker&display=swap");
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+     
+    body,html{
+    background-image: url('Img/Homebackground.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    scroll-behavior: smooth;
+    
+}
+     
+    :root {
+        --main-bg-color: #0B0C10;
+        --secondary-bg-color: #1F2833;
+        --main-cont-color:#2b3848;
+        --secondary-cont-color: #c3073f;
+        --main-font-color: #C5C6C7;
+    }
+     
+    h1 {
+        font-size: 90px;
+        color: var(--main-cont-color);
+        font-weight: 100;
+        margin: 0;
+    }
+     
+    h2 {
+        font-family: 'Bebas Neue', sans-serif;
+        margin:20px;
+        display:flex;
+        justify-content: center;
+        padding-top: 20px;
+        font-size: 30px;
+        color: white;
+        font-weight: 100;
+        margin: 0;
+    }
+     
+    h3 {
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        font-size: 0.8em;
+    }
+     
+     
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        color: white;
+    }
+     
+    html {
+        scroll-behavior: smooth;
+    }
+     
+    body {
+        margin: 0;
+        padding: 0;
+        height: auto;
+        width: 100%;
+       
+    }
+     
+     
+    header {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid #C5C6C7;
+        
+    }
+     
+    header div {
+        font-family: "Montserrat", sans-serif;
+        font-size: 50px;
+        color: white;
+    }
+     
+    nav {
+        height: 70px;
+        background: var(--main-cont-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        position: -webkit-sticky;
+        z-index: 999;
+        top: 0;
+    }
+     
+    nav a {
+        margin: 0px 40px 0px 40px;
+        padding: 21px 0px 21px 0px;
+        border-bottom: 3px solid rgba(0, 0, 0, 0);
+        transition: color ease-in-out 250ms;
+    }
+     
+    nav a:hover {
+        color: white;
+    }
+     
+    nav a.active {
+        border-bottom-color: var(--main-cont-color);
+    }
+     
+     
+     
+    main {
+        height: auto;
+        width: 100%;
+    }
+     
+    p{
+        color:white;
+    }
+
+   
+   .gameReview .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+   }
+
+   .gameReview .grid{
+       width: 70%;
+       display: block;
+       margin:20px;
+       padding-left:10%;
+   }
+
+   .gameReview .game1 {
+       display: grid;
+       grid-template-columns: 1fr 2fr;
+       grid-column-gap: 50px;
+       margin:50px;
+   }
+
+   .gameReview .game1  .poster{
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+       
+   }
+
+   .gameReview .game1 .title{
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+   }
+
+   .gameReview .game2 {
+       display: grid;
+       grid-template-columns: 1fr 2fr;
+       grid-column-gap: 50px;
+       margin: 50px;
+   }
+
+   .gameReview .game2  .poster{
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+       
+   }
+
+   .gameReview .game2 .title{
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+   }
+
+   .gameReview .game3 {
+       display: grid;
+       grid-template-columns: 1fr 2fr;
+       grid-column-gap: 50px;
+       margin: 50px;
+   }
+
+   .gameReview .game3  .poster{
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+       
+   }
+
+   .gameReview .game3 .title{
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+   }
+
+   .gameReview .game4 {
+       display: grid;
+       grid-template-columns: 1fr 2fr;
+       grid-column-gap: 50px;
+       margin: 50px;
+   }
+
+   .gameReview .game4  .poster{
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+       
+   }
+
+   .gameReview .game4 .title{
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+   }
+
+   .gameReview .game5 {
+       display: grid;
+       grid-template-columns: 1fr 2fr;
+       grid-column-gap: 50px;
+       margin: 50px;
+   }
+
+   .gameReview .game5  .poster{
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+       
+   }
+
+   .gameReview .game5 .title{
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+   }
+
+   .gameReview .poster img:hover{
+    
+    opacity: 0.7;
+    
+   }
+   
+
+   .gameReview .title h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+       
+   }
+
+   .gameReview .title p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+   }
+
+
+  
+</style>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment 2</title>
+
+  <!-- Keep wireframe.css for debugging, add your css to style.css -->
+  
+</head>
+ 
+<body>
+  <a id="home"></a>
+  <header>
+    <div><h1>GamePlus
+    <img src='Img/Logo.png' id="Logo" alt='website Logo' height="40" float="left"/>
+         </h1>
+    </div>
+  </header>
+ 
+  <nav id="navbar">
+      
+    <a href="#home">Home</a>
+    <a href="#Games">Games</a>
+    <a href="#GameGuide">GameGuide</a>
+    <a href="#Video">Video</a>
+  </nav>
+ 
+ 
+  <main>
+
+    <section class="gameReview">
+
+        <h2>Game Review</h2>
+            <div class="container">
+            <div class="grid">
+            
+            <div class ="game1">
+            <div class= "poster">
+            <img src="Img/WorldOfWarcraft/worldofwarcraft.jpg" alt="">
+            </div>
+            <div class ="title">
+            <div class="head">
+                    <h1>DOTA2</h1>
+                    
+            </div>
+            <br>
+                <p>Dota 2 is different. Adopted by Valve, that original mod became a tool for boosting Steam’s popularity in 
+                    places where the service hadn’t reached the ubiquity that it enjoyed in Europe and North America—such as Russia, 
+                    Southeast Asia and China, traditional strongholds of the DotA scene. And the best way to do this proved to be to 
+                    remain steadfastly idiosyncratic. What this resulted in was a free to play MOBA where all of the heroes are free, 
+                    where there are no account levels to grind, where design compromises imposed by the limitations of a noughties map editor 
+                    have been embraced as design law. Dota’s leap from mod-scene darling to million-dollar phenomenon was whiplash-inducingly quick, 
+                    its uncommercial credibility ripped away like a bandaid—so fast that you might not notice it was gone.</p>
+            </div>
+            
+            </div>   
+
+            <div class ="game2">
+                    <div class= "poster">
+                    <img src="Img/Leagueoflegends/League-of-Legends.jpg" alt="" style="max-height: 450x; max-width: 432px;"/>
+                    </div>
+                    <div class ="title">
+                    <h1>League Of Legends</h1>
+                    <br>
+                        <p>League of Legends is one of the first stand-alone multiplayer battle arena style games based off the incredibly popular 
+                            DotA map for Warcraft 3. Despite being one of the oldest stand-alone MOBAs, League of Legends remains the most popular. 
+                            In fact, with over 67 million monthly active users, League of Legends is the world's most popular PC game. 
+                            League of Legends, and all other games in the MOBA genre, mix real-time strategy aspects with RPG elements. 
+                            The premise of the game is quite simple - two teams of five battle it out and win by destroying their opponents main structure, called the "nexus". 
+                            Individual games typically last 35-45 minutes, but in some instances they can drag on for well over an hour..</p>
+                    </div>
+             </div>   
+
+             <div class ="game3">
+                    <div class= "poster">
+                    <img src="Img/HearthStone/HearthStoneAD.jpg" alt="">
+                    </div>
+                    <div class ="title">
+                    <h1>HearthStone</h1>
+                    <br>
+                        <p>Let’s take a step back from the high level stuff for a second. 
+                            Hearthstone is a strategy game developed by Blizzard and released in 2014. It wasn’t the first collectible card game (CCG) 
+                            adapted for the PC, but it was the one to make the genre explode in the digital space. These days there are many imitators,
+                             all looking to carve off some of the same success. The most notable include Gwent, The Elder Scrolls: Legends, 
+                             and Valve’s soon-to-be-released Artifact. All that means Hearthstone isn’t quite the monolith it once was, 
+                             but make no mistake: it’s still the king of digital CCGs. And for good reason. Hearthstone's major success is in
+                            keeping the core mechanics simple enough for new players to not 
+                            immediately feel out of their depth, while leaving more than enough complexity to keep you hooked for the long term.</p>
+                    </div>
+             </div>   
+
+             <div class ="game4">
+                    <div class= "poster">
+                    <img src="Img/OverWatch/overwatchAD.jpg" alt="">
+                    </div>
+                    <div class ="title">
+                    <h1>OverWatch</h1>
+                    <br>
+                        <p>Overwatch exists at an intersection between design and artistry, a crossroad at which pure tactile joy meets
+                             refined, intelligent design to create a rare spark of magic. As a 6v6 multiplayer, objective-based shooter, 
+                             t finds accessibility not by lowering the skill ceiling, but by broadening the definition of skill. 
+                             The person with deadshot aim is no more valuable than the person with the decision-making ability to know 
+                             when a well-timed ability will turn an engagement, or the person with the map-sense to find the optimal 
+                             locations to place sentry turrets. While it didn't exactly drown me in options, maps, and modes,
+                              it’s blessed with a multitude of tactical layers, and none of them ever came between me and my enjoyment 
+                              of its intense, swirling teamfights, and thrilling overtime comebacks..</p>
+                    </div>
+             </div>   
+
+
+             <div class ="game5">
+                    <div class= "poster">
+                    <img src="Img/WorldOfWarcraft/worldofwarcraft.jpg" alt="">
+                    </div>
+                    <div class ="title">
+                    <h1>World Of Warcraft</h1>
+                    <br>
+                        <p>
+                                In my opinion this game is by far the best game of all time. 
+                                It has a very immersive story with each character having very interesting backstory.
+                                 The PVP is both challenging and fun. The PVE can be a little bit of a grind but nothing you can't accomplish with some grit and time
+                                 However if your easily offended you may hate the fan base but if you love a game with a ever-growing story,adaptable gameplay,
+                                passionate fan base and a range of character options to choose from then you will love WOW. FOR THE HORDE. 
+
+                        </p>
+                    </div>
+             </div> 
+            
+            </div>               
+        </div>
+
+    </section>
+
+</main>
+</body>
+</html>
