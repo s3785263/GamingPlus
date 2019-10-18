@@ -4,12 +4,12 @@
 <style>@import url("https://fonts.googleapis.com/css?family=Montserrat"); 
     @import url("https://fonts.googleapis.com/css?family=Blinker&display=swap");
     @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-    
+   
 
 
 
     body,html{
-    background-image: url('Img/OverWatch/OWBG.jpg');
+    background-image: url('Img/Leagueoflegends/lol_promoart_15_2.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -27,8 +27,9 @@
     }
      
     h1 {
+	font-family: "Montserrat", sans-serif;
         font-size: 90px;
-        color: #7eb2eb;
+        color:#7eb2eb;
         font-weight: 100;
         margin: 0;
     }
@@ -49,10 +50,18 @@
      
      
     a {
-        text-decoration: none;
-        text-transform: uppercase;
+	text-transform: uppercase;
+	text-decoration: none;
         font-family: "Montserrat", sans-serif;
         font-size: 15px;
+        color: white;
+    }
+
+    #source {
+	text-transform: none;
+	text-decoration: underline;
+        font-family: "Montserrat", sans-serif;
+        font-size: x-small;
         color: white;
     }
      
@@ -74,12 +83,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-       
+        
         
     }
      
     header div {
-       font-family: "Montserrat", sans-serif;
+         font-family: "Montserrat", sans-serif;
         font-size: 50px;
         color: white;
     }
@@ -119,10 +128,21 @@
     }
      
     p{
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
         color:white;
     }
 
-    
+    #title {
+
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        color:white;
+	font-weight: bold;
+    }
     
    
 article{
@@ -142,10 +162,11 @@ main{
   div.video{
       display: inline-table;
       float:right;
+      
   }
   
   .button {
-         background-color:#3262aa;
+         background-color: #1c87c9;
          border: none;
          color: white;
          padding: 20px 34px;
@@ -161,7 +182,7 @@ main{
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Assignment 2</title>
+  <title>GameGuide - League of Legends</title>
 
   <!-- Keep wireframe.css for debugging, add your css to style.css -->
   
@@ -176,40 +197,52 @@ main{
     </div>
   </header>
  
- <nav id="navbar">
+  <nav id="navbar">
       
-      <a href="#home">Home</a>
-      <a href="gamereview.html">Games</a>
-      <a href="Guide.html">GameGuide</a>
-      <a href="#Video">Video</a>
-    </nav>
+    <a href="#home">Home</a>
+    <a href="gamereview.html">Games</a>
+    <a href="Guide.html">GameGuide</a>
+    <a href="#Video">Video</a>
+  </nav>
+ 
  
  <main>
-     <h2><img src='Img/OverWatch/OVERLG.png'id='dotaLG' height='200'></h2>
-     <article>
-        <a> WELCOME TO OVERWATCH</a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a class='guide'>
-                Overwatch is a colorful team-based shooter game starring a diverse cast of powerful heroes. Travel the world, build a team, and contest objectives in exhilarating 6v6 combat.
-
-
-        </a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        
-        <a href="https://us.shop.battle.net/en-us/product/overwatch?blzcmp=ow_buy_nav" class="button">Download Game </a>
+     <h2><img src='Img/Leagueoflegends/lol-logo.png'id='LeagueoflegendsLG'></h2>
+     <article>     
+         <div id="title">
+         Introduction
+        </div>
+        <p>
+         League of Legends is a multiplayer online battle arena game. In League of Legends, players assume the role of a summoner that controls a champion, with unique abilities and battle against a team of other players or computer-controlled champions. The goal is usually to destroy the opposing team's Nexus, a structure that lies at the heart of a base protected by defensive structures.
+	</p>
+         <div id="title">
+         How To Play
+        </div>
+        <p>
+	To move your champion, right click on the terrain where you'd like to go
+To attack an enemy, right click on your target
+To cast a spell left-click the associated icon or use the spell's hotkey (Q,W,E, or R by default), and then click on the target.
+	</p>
+         <div id="title">
+         Game Basics
+        </div>
+        <p>
+	<b>Lanes:</b> Roads that connect your base to your enemies
+	<br>
+	<b>Minions:</b> Soldiers controlled by AI that spawn at the nexus and move toward the enemy’s base, fighting enemies they encounter on the way. You can earn coins for killing minions.
+	<br>
+	<b>Turrets:</b> Defensive structures that defend each lane at even intervals
+	<br>
+	<b>Inhibitors:</b> Located where the lanes meet the base. A super minion will spawn with each new wave of minions if the inhibitor is destroyed.
+	<br>
+	<b>Nexus:</b> The heart of the base that periodically spawn minion waves in each lane. Destroying the nexus of the opposing player will win the game.
+	<br>
+	<b>Levels:</b>You earn XP while playing the game which allow you to level up and unlock game modes, summoning spells and loot.
+	</p>
+<a id="source" href="https://na.leagueoflegends.com/en/game-info/get-started/new-player-guide/">Information sourced from official League of Legends site</a>
     </article>
-        <div class="video">
-                <iframe width="600" height="400" src="https://www.youtube.com/embed/UEYp1RTvllM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <div class="video">
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/-157HBpPZ24" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  </main>
 
      
@@ -228,7 +261,7 @@ main{
     
   
  
-  
+ 
  
 </body>
  

@@ -4,12 +4,12 @@
 <style>@import url("https://fonts.googleapis.com/css?family=Montserrat"); 
     @import url("https://fonts.googleapis.com/css?family=Blinker&display=swap");
     @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-    
+   
 
 
 
     body,html{
-    background-image: url('Img/OverWatch/OWBG.jpg');
+    background-image: url('Img/Dota2/backgroundDOTA2.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -49,10 +49,18 @@
      
      
     a {
-        text-decoration: none;
-        text-transform: uppercase;
+	text-transform: uppercase;
+	text-decoration: none;
         font-family: "Montserrat", sans-serif;
         font-size: 15px;
+        color: white;
+    }
+
+    #source {
+	text-transform: none;
+	text-decoration: underline;
+        font-family: "Montserrat", sans-serif;
+        font-size: x-small;
         color: white;
     }
      
@@ -79,7 +87,7 @@
     }
      
     header div {
-       font-family: "Montserrat", sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-size: 50px;
         color: white;
     }
@@ -119,10 +127,21 @@
     }
      
     p{
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
         color:white;
     }
 
-    
+    #title {
+
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        color:white;
+	font-weight: bold;
+    }
     
    
 article{
@@ -142,10 +161,11 @@ main{
   div.video{
       display: inline-table;
       float:right;
+      
   }
   
   .button {
-         background-color:#3262aa;
+         background-color: #1c87c9;
          border: none;
          color: white;
          padding: 20px 34px;
@@ -161,7 +181,7 @@ main{
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Assignment 2</title>
+  <title>GameGuide - DOTA 2</title>
 
   <!-- Keep wireframe.css for debugging, add your css to style.css -->
   
@@ -178,38 +198,45 @@ main{
  
  <nav id="navbar">
       
-      <a href="#home">Home</a>
-      <a href="gamereview.html">Games</a>
-      <a href="Guide.html">GameGuide</a>
-      <a href="#Video">Video</a>
-    </nav>
+    <a href="#home">Home</a>
+    <a href="gamereview.html">Games</a>
+    <a href="Guide.html">GameGuide</a>
+    <a href="#Video">Video</a>
+  </nav>
+ 
  
  <main>
-     <h2><img src='Img/OverWatch/OVERLG.png'id='dotaLG' height='200'></h2>
-     <article>
-        <a> WELCOME TO OVERWATCH</a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a class='guide'>
-                Overwatch is a colorful team-based shooter game starring a diverse cast of powerful heroes. Travel the world, build a team, and contest objectives in exhilarating 6v6 combat.
+     <h2><img src='Img/Dota2/dota-2-logo.png'id='Dota2Logo' height= '200'></h2>
+     <article>     
+         <div id="title">
+         Introduction
+        </div>
+        <p>
+Dota 2 is a  multiplayer online battle arena video game and a sequel to Dota. Players control a hero that is a part of a team and work together to defeat the opposing team by destroying their ancient. The game includes heroes (playable characters), buildings (towers, barracks, ancients etc.) and creeps.
+	</p>
+         <div id="title">
+         Game Basics
+        </div>
+        <p>
+Dota 2 is played in matches between two teams of five players, with each team occupying and defending their own separate base on the map. Each of the ten players independently controls a powerful character, known as a "hero", who all have unique abilities and differing styles of play. During a match, players collect experience points and items for their heroes to successfully defeat the opposing team's heroes in player versus player combat. A team wins by being the first to destroy the other team's "Ancient", a large structure located within their base.
+
+	</p>
+         <div id="title">
+         Heroes
+        </div>
+        <p>
+Heroes (controlled by players) possess three attributes, one of which is their primary attribute. The attributes are:
+<br><b>Strength:</b> Heroes with this primary attribute are warriors and can withstand more damage 
+<br><b>Agility:</b> These heroes have high attack speed and armor, and use regular attacks along with equipped items.
+<br><b>Intelligence:</b> These heroes are masters of spells and abilities. They tend to have larger mana pools and much greater mana regeneration than other heroes
 
 
-        </a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        
-        <a href="https://us.shop.battle.net/en-us/product/overwatch?blzcmp=ow_buy_nav" class="button">Download Game </a>
+	</p>
+<a id="source" href="https://en.wikipedia.org/wiki/Dota_2">Source 1</a>
+<a id="source" href="https://dota2.gamepedia.com/">Source 2</a>
     </article>
-        <div class="video">
-                <iframe width="600" height="400" src="https://www.youtube.com/embed/UEYp1RTvllM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <div class="video">
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/SmnqsdeHFT0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  </main>
 
      
@@ -228,7 +255,7 @@ main{
     
   
  
-  
+ 
  
 </body>
  
