@@ -1,0 +1,243 @@
+
+        @import url("https://fonts.googleapis.com/css?family=Montserrat"); 
+        @import url("https://fonts.googleapis.com/css?family=Blinker&display=swap");
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+        
+       
+    body,html{
+        background-image: url('Img/Homebackground.jpg');
+         background-repeat: no-repeat;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-position: center;
+         background-size: cover;
+         scroll-behavior: smooth;
+         
+     }
+          
+         :root {
+             --main-bg-color: #0B0C10;
+             --secondary-bg-color: #1F2833;
+             --main-cont-color:#2b3848;;
+             --secondary-cont-color: #c3073f;
+             --main-font-color: #C5C6C7;
+         }
+          
+         h1 {
+             font-size: 90px;
+             color: var(--main-cont-color);
+             font-weight: 100;
+             margin: 0;
+         }
+          
+         h2 {
+             font-family: 'Bebas Neue', sans-serif;
+             font-size: 50px;
+             color: white;
+             font-weight: 100;
+             margin: 0;
+         }
+          
+         h3 {
+             font-family: 'Open Sans', sans-serif;
+             color: white;
+             font-size: 0.8em;
+         }
+          
+          
+         a {
+             text-decoration: none;
+             text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+             font-size: 15px;
+             color: white;
+         }
+          
+         html {
+             scroll-behavior: smooth;
+         }
+          
+         body {
+             margin: 0;
+             padding: 0;
+             height: auto;
+             width: 100%;
+            
+         }
+          
+          
+         header {
+             height: 100px;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             border-bottom: 2px solid #C5C6C7;
+             
+         }
+          
+         header div {
+             font-family:"GALACTIC VANGUARDIAN NCV";
+             font-size: 50px;
+             color: white;
+         }
+          
+         nav {
+             height: 70px;
+             background: var(--main-cont-color);
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             position: sticky;
+             position: -webkit-sticky;
+             z-index: 999;
+             top: 0;
+         }
+          
+         nav a {
+             margin: 0px 40px 0px 40px;
+             padding: 21px 0px 21px 0px;
+             border-bottom: 3px solid rgba(0, 0, 0, 0);
+             transition: color ease-in-out 250ms;
+         }
+          
+         nav a:hover {
+             color: white;
+         }
+          
+         nav a.active {
+             border-bottom-color: var(--main-cont-color);
+         }
+          
+          
+          
+         main {
+             height: auto;
+             width: 100%;
+         }
+          
+         p{
+             color:white;
+         }
+     
+        
+        
+        main {
+            height: auto;
+            width: 100%;
+        }
+        
+        .loginbox {
+        
+        
+            display:block;
+            width: 320px;
+            height:  480px;
+            background:var(--main-cont-color);
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            position : absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+            margin-top:80px;
+            
+        
+        }
+        
+        .avatar{
+        
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            left: calc(50% - 50px);
+            
+        }
+        
+        .facebook{
+        
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            bottom:10px;
+            left: calc(25% - 50px);
+        }
+        
+        .google{
+        
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            bottom:10px;
+            left: calc(45% - 50px);
+        }
+        
+        .loginbox h1{
+        
+            margin: 0;
+            padding:0 0 20px;
+            text-align: center;
+            font-size: 22px;
+            color: White;
+            font-family: "Montserrat", sans-serif;
+        }
+        
+        .loginbox p{
+            margin: 0;
+            padding:0;
+            font-weight: bold;
+            font-family: "Montserrat", sans-serif;
+        
+        }
+        
+        .loginbox input{
+            width:100%;
+            margin-bottom:20px;
+        
+        }
+        
+        .loginbox input[type="text"], input[type="password"]{
+        
+            border:none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+        }
+        
+        .loginbox input[type="submit"]{
+        
+            border:none;
+            outline:none;
+            height:40px;
+            color: #ffc107;
+            font-size:18px;
+            border-radius:20px;
+        
+        }
+        
+        .loginbox input[type="submit"]:hover{
+            cursor: pointer;
+            background: #f8bc06;
+            color:#000;
+        
+        }
+        
+        .loginbox a{
+            text-decoration: none;
+            font-size:12px;
+            line-height: 20px;
+            color:darkgrey;
+        }
+        
+        .loginbox a:hover{
+            color:#ffc107;
+        }
+        
+        
